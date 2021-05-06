@@ -1,5 +1,26 @@
-<h1>flats</h1>
+<div class="container">
+  <div class="map-container">
+    <div class="row">
+      <div class="col-6">
+        <%= link_to "add", new_flat_path, class: "btn btn-ghost" %>
 
-<% @flats.each do |flat| %>
-  <li><%= flat.title %></li>
-<% end %>
+      <% @flats.each do | flat | %>
+        <div class="card-trip">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+          <div class="card-trip-infos">
+            <%= link_to flat.title, flat_path(flat) %>
+              <p><%= flat.flat_type %></p>
+              <p><%= flat.address %></p>
+              <p><%= flat.size %></p>
+              <h2 class="card-trip-pricing"><%= flat.price %></h2>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-6">
+      </div>
+
+    </div>
+</div>

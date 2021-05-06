@@ -1,0 +1,11 @@
+<div class="simple_form">
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :title, placeholder: 'Title' %>
+    <%= f.input :address, placeholder: 'Address' %>
+    <%= f.input :flat_type, :collection => ["Studio", "Apartment", "Penthouse", "Duplex", "House", "Cottage"], prompt: "Studio, Apartment, etc." %>
+    <%= f.input :size, placeholder: 'Aprox. size' %>
+    <%= f.input :price, placeholder: 'Amount in EUR' %>
+    <%= f.input :availability %>
+    <%= f.button :submit, "Save", class: 'btn btn-success' %>
+  <% end %>
+</div>
