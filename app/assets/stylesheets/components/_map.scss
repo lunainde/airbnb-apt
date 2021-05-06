@@ -1,0 +1,24 @@
+
+/* MAP POSITIONING */
+.row {
+  display: flex;
+}
+
+#map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.cards {
+  flex-grow: 1;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
